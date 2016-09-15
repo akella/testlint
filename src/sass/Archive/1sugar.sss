@@ -1,0 +1,68 @@
+@import partial
+$var1: 12px
+$var2: 14px
+@define-mixin test $a, $b
+	width: $a
+	height: $b
+@define-mixin composite
+	+test(12px,20px)
+@define-mixin responsive $size:200
+	@media (width > $(size)px)
+		@mixin-content
+.box1
+	margin-top: 20px
+	display: none
+	margin: 1px
+	background: red
+	// margin: 2px
+	// margin: 0 2px
+	background: blue
+	+test(1px,2px)
+.obx .boa .box.asd .bla
+	display: none
+.box1
+	display: block
+	DISPLAY: block
+	.box2
+		display: none
+		.box3
+			display: block
+			.box4
+				background: #fff
+.box2
+	display: block
+
+.box
+	+test($var1,$var2)
+	width: 50%
+	background: rgba(#000,.5)
+	+responsive(800)
+		width: 100%
+	+responsive
+		width: auto
+		+test(12px,20px)
+	.div
+		display: block
+		.subblock
+			display: block
+//* @define boxy
+.boxy
+	display: block
+	+size(10px)
+	.boxy__bla
+		display: none
+	&_bla
+		display: block
+		.boxy__blas
+	.box
+		display: none
+	.box_bla
+		display: block
+	.boxy_bla.is-active
+		background: red
+	.boxy___bla
+		color: #fff
+	&.is-active
+		display: block
+		.boxy__sub
+			display: none

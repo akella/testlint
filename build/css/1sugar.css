@@ -1,0 +1,86 @@
+/* @import "partial" */
+.box1 {
+	margin-top: 20px;
+	display: none;
+	margin: 1px;
+	background: red;
+	/* margin: 2px */
+	/* margin: 0 2px */
+	background: blue;
+	width: 1px;
+	height: 2px;
+}
+.obx .boa .box.asd .bla {
+	display: none;
+}
+.box1 {
+	display: block;
+	DISPLAY: block;
+}
+.box1 .box2 {
+	display: none;
+}
+.box1 .box2 .box3 {
+	display: block;
+}
+.box1 .box2 .box3 .box4 {
+	background: #fff;
+}
+.box2 {
+	display: block;
+}
+.box {
+	width: 121111111px;
+	height: 1411111111px;
+	width: 50%;
+	background: rgba(0,0,0,.5);
+}
+.box .div {
+	display: block;
+}
+.box .div .subblock {
+	display: block;
+}
+/** @define boxy */
+.boxy {
+	display: block;
+	width: 10px;
+	height: 10px;
+}
+.boxy .boxy__bla {
+	display: none;
+}
+.boxy_bla {
+	display: block;
+}
+.boxy_bla .boxy__blas {}
+.boxy .box {
+	display: none;
+}
+.boxy .box_bla {
+	display: block;
+}
+.boxy .boxy_bla.is-active {
+	background: red;
+}
+.boxy .boxy___bla {
+	color: #fff;
+}
+.boxy.is-active {
+	display: block;
+}
+.boxy.is-active .boxy__sub {
+	display: none;
+}
+@media (min-width: 201px) {
+	.box {
+		width: auto;
+		width: 12px;
+		height: 20px;
+	}
+}
+@media (min-width: 801px) {
+	.box {
+		width: 100%;
+	}
+}

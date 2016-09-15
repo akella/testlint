@@ -1,0 +1,45 @@
+
+// width
+@define-mixin r $width
+  @media only screen and (max-width: $(width)px)
+    @mixin-content
+
+@define-mixin rmin($width)
+  @media only screen and (min-width: $(width)px)
+    @mixin-content
+
+// height
+@define-mixin rh($height)
+  @media only screen and (max-height: $height + "px")
+    @mixin-content
+
+@define-mixin rhmin($height)
+  @media only screen and (min-height: $height + "px")
+    @mixin-content
+
+@define-mixin fs $sizeValue: 16
+  font-size: $sizeValue + px
+  font-size: $sizeValue / 10 + rem
+
+@define-mixin text-overflow
+  overflow: hidden
+  -ms-text-overflow: ellipsis
+  text-overflow: ellipsis
+  white-space: nowrap
+
+@define-mixin ie
+  *display: inline
+  *zoom: 1
+
+
+@define-mixin coverdiv
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+@define-mixin cover
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50% 50%
